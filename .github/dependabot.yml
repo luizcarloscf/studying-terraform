@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: terraform
+  directory: "/examples/ec2_vpc_ssh"
+  schedule:
+    interval: daily
+  target-branch: "main"
+  open-pull-requests-limit: 10
+- package-ecosystem: terraform
+  directory: "/modules/ec2_vpc_ssh"
+  schedule:
+    interval: daily
+  target-branch: "main"
+  open-pull-requests-limit: 10
